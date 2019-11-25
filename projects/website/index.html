@@ -10,23 +10,24 @@
     <meta name="keywords" content="profile,personal,developer,software engineer,java">
 
     <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Ian Palencar"/>
+<meta name="twitter:title" content="Website: Care and Feeding"/>
 <meta name="twitter:description" content="A collection of projects, musings, and more."/>
 
-    <meta property="og:title" content="Ian Palencar" />
+    <meta property="og:title" content="Website: Care and Feeding" />
 <meta property="og:description" content="A collection of projects, musings, and more." />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://cranialpane.net/" />
+<meta property="og:url" content="https://cranialpane.net/projects/website/" />
 
+<meta property="og:updated_time" content="2019-11-25T14:48:20-05:00" />
 
 
     
-      <base href="https://cranialpane.net/">
+      <base href="https://cranialpane.net/projects/website/">
     
-    <title>Ian Palencar</title>
+    <title>Website: Care and Feeding · Ian Palencar</title>
 
     
-      <link rel="canonical" href="https://cranialpane.net/">
+      <link rel="canonical" href="https://cranialpane.net/projects/website/">
     
 
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700" rel="stylesheet">
@@ -50,7 +51,7 @@
     <link rel="icon" type="image/png" href="https://cranialpane.net/img/disk-doctor-32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="https://cranialpane.net/img/disk-doctor-16.png" sizes="16x16">
 
-    <link rel="alternate" type="application/rss+xml" href="https://cranialpane.net/index.xml" title="Ian Palencar" />
+    <link rel="alternate" type="application/rss+xml" href="https://cranialpane.net/projects/website/index.xml" title="Ian Palencar" />
     <meta name="generator" content="Hugo 0.59.1" />
   </head>
 
@@ -87,33 +88,36 @@
 
       <div class="content">
         
-  <section class="container centered">
-  <div class="about">
+  <section class="container list">
+  <h1 class="title">Website: Care and Feeding</h1>
+  
+
+<h2 id="intro">Intro</h2>
+
+<p>Hello! This is a short article about how this site was built and deployed. I learned a lot on the way, and while I wouldn&rsquo;t consider myself an expert by any means hopefully this helps push someone over the edge into hosting.</p>
+
+<h2 id="design-and-build">Design and Build</h2>
+
+<p>First, I didn&rsquo;t want to write raw HTML/CSS/JS. I don&rsquo;t do that stuff by trade and learning the finer points of it seemed like too much trouble. Enter <a href="https://gohugo.io/" rel="noreferrer" target="_blank">Hugo</a>, a static site generator. This scratched multiple needs for me:</p>
+
+<ol>
+<li>Avoid a dynamically generated site</li>
+<li>Reduce dependencies on outside environments</li>
+<li>Have a truly portable site which is light on resources</li>
+</ol>
+
+<p>Hugo is immensely flexible when it comes to templates. The possibilities are near endless, and while I&rsquo;m currently using <a href="https://themes.gohugo.io/hugo-coder/" rel="noreferrer" target="_blank">Hugo Coder</a> with some alterations. I&rsquo;m planning on reducing the footprint even more, including removing any external website dependencies (fonts/javascript/etc). There&rsquo;s a lot to be said for a simple website which <em>just works</em>.</p>
+
+<h2 id="deploy-hosting-and-dns">Deploy, Hosting, and DNS</h2>
+
+<p>Now that I could easily browse my site via <code>localhost</code> I needed to get it out there! I decided to use <a href="https://pages.github.com/" rel="noreferrer" target="_blank">GitHub Pages</a> as a hosting provider of sorts. Future plans include migrating to a separate hosting provider but maintaining the structure and build of the site. Updating my site is as easy as pushing a new commit! DNS is handled via <a href="https://www.namecheap.com/" rel="noreferrer" target="_blank">Namecheap</a> and a single <code>ALIAS</code> record. Mail is handled via <a href="https://fastmail.com/" rel="noreferrer" target="_blank">Fastmail</a>. To make deploying things easier, I built a script to build &amp; deploy everything. Now to just get some more things out of draft&hellip;</p>
+
+  <ul>
     
-    <h1>Ian Palencar</h1>
-    <h2>Software Engineer</h2>
     
-    <ul>
-      
-        
-          <li>
-            <a href="https://github.com/ianpalencar/" aria-label="GitHub" >
-              <i class="fab fa-github fa-2x" aria-hidden="true"></i>
-            </a>
-          </li>
-        
-      
-        
-          <li>
-            <a href="mailto:hello@cranialpane.net" aria-label="Mail" >
-              <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
-            </a>
-          </li>
-        
-      
-    </ul>
+
+
     
-  </div>
 </section>
 
 

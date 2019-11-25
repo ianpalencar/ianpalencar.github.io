@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ian Palencar</title>
@@ -18,15 +18,6 @@
       <guid>https://cranialpane.net/about/</guid>
       <description>Hello Hello, I&amp;rsquo;m Ian! My day job involves me creating great medical imaging solutions in Java and my evenings are spent across a multitude of activites and personal projects.
 Current Interests I like spending my free time working on personal software projects, learning new technologies, playing video games, building robots, finding new restaurants, and several other categories of awesome. Current passions include repairing broken equipment found on eBay and trying to determine if welding in my apartment&amp;rsquo;s garage breaks my lease.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://cranialpane.net/projects/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://cranialpane.net/projects/</guid>
-      <description>Projects This is a collection of everything I have or am currently working on. Individual project logs will be posted as I find the time.</description>
     </item>
     
   </channel>

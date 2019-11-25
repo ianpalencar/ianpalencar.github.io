@@ -1,13 +1,14 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://cranialpane.net/about/</loc>
+    <loc>https://cranialpane.net/projects/website/</loc>
+    <lastmod>2019-11-25T14:48:20-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://cranialpane.net/projects/</loc>
+    <loc>https://cranialpane.net/about/</loc>
   </url>
   
   <url>
@@ -16,6 +17,10 @@
   
   <url>
     <loc>https://cranialpane.net/</loc>
+  </url>
+  
+  <url>
+    <loc>https://cranialpane.net/projects/</loc>
   </url>
   
   <url>
