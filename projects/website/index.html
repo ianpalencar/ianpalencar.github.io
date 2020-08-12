@@ -17,27 +17,22 @@
 <meta property="og:description" content="A collection of projects, musings, and more." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://cranialpane.net/projects/website/" />
-
 <meta property="og:updated_time" content="2019-11-25T14:48:20-05:00" />
 
 
     
       <base href="https://cranialpane.net/projects/website/">
     
-    <title>Website: Care and Feeding · Ian Palencar</title>
+    <title>Website: Care and Feeding · cranialpane.net</title>
 
     
       <link rel="canonical" href="https://cranialpane.net/projects/website/">
     
 
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
-
     
       
       
-      <link rel="stylesheet" href="/css/coder.min.434ce9b334eb2311457b624d938afb2e37cf07f057dac17cfaf7c44b29da5b28.css" integrity="sha256-Q0zpszTrIxFFe2JNk4r7LjfPB/BX2sF8&#43;vfESynaWyg=" crossorigin="anonymous" media="screen" />
+      <link rel="stylesheet" href="/css/coder.min.c525cc4963a6d8d562f5d9eaf1b61c89b43984ce7b2b4f7fcf810b28f159d0af.css" integrity="sha256-xSXMSWOm2NVi9dnq8bYcibQ5hM57K09/z4ELKPFZ0K8=" crossorigin="anonymous" media="screen" />
     
 
     
@@ -51,8 +46,8 @@
     <link rel="icon" type="image/png" href="https://cranialpane.net/img/disk-doctor-32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="https://cranialpane.net/img/disk-doctor-16.png" sizes="16x16">
 
-    <link rel="alternate" type="application/rss+xml" href="https://cranialpane.net/projects/website/index.xml" title="Ian Palencar" />
-    <meta name="generator" content="Hugo 0.59.1" />
+    <link rel="alternate" type="application/rss+xml" href="https://cranialpane.net/projects/website/index.xml" title="cranialpane.net" />
+    <meta name="generator" content="Hugo 0.74.2" />
   </head>
 
   <body class=" ">
@@ -60,7 +55,7 @@
       <nav class="navigation">
   <section class="container">
     <a class="navigation-title" href="/">
-      Ian Palencar
+      cranialpane.net
     </a>
     <input type="checkbox" id="menu-toggle" />
     <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
@@ -90,27 +85,18 @@
         
   <section class="container list">
   <h1 class="title">Website: Care and Feeding</h1>
-  
-
-<h2 id="intro">Intro</h2>
-
+  <h2 id="intro">Intro</h2>
 <p>Hello! This is a short article about how this site was built and deployed. I learned a lot on the way, and while I wouldn&rsquo;t consider myself an expert by any means hopefully this helps push someone over the edge into hosting.</p>
-
 <h2 id="design-and-build">Design and Build</h2>
-
-<p>First, I didn&rsquo;t want to write raw HTML/CSS/JS. I don&rsquo;t do that stuff by trade and learning the finer points of it seemed like too much trouble. Enter <a href="https://gohugo.io/" rel="noreferrer" target="_blank">Hugo</a>, a static site generator. This scratched multiple needs for me:</p>
-
+<p>First, I didn&rsquo;t want to write raw HTML/CSS/JS. I don&rsquo;t do that stuff by trade and learning the finer points of it seemed like too much trouble. Enter <a href="https://gohugo.io/">Hugo</a>, a static site generator. This scratched multiple needs for me:</p>
 <ol>
 <li>Avoid a dynamically generated site</li>
 <li>Reduce dependencies on outside environments</li>
 <li>Have a truly portable site which is light on resources</li>
 </ol>
-
-<p>Hugo is immensely flexible when it comes to templates. The possibilities are near endless, and while I&rsquo;m currently using <a href="https://themes.gohugo.io/hugo-coder/" rel="noreferrer" target="_blank">Hugo Coder</a> with some alterations. I&rsquo;m planning on reducing the footprint even more, including removing any external website dependencies (fonts/javascript/etc). There&rsquo;s a lot to be said for a simple website which <em>just works</em>.</p>
-
+<p>Hugo is immensely flexible when it comes to templates. The possibilities are near endless, and while I&rsquo;m currently using <a href="https://themes.gohugo.io/hugo-coder/">Hugo Coder</a> with some alterations. I&rsquo;m planning on reducing the footprint even more, including removing any external website dependencies (fonts/javascript/etc). There&rsquo;s a lot to be said for a simple website which <em>just works</em>.</p>
 <h2 id="deploy-hosting-and-dns">Deploy, Hosting, and DNS</h2>
-
-<p>Now that I could easily browse my site via <code>localhost</code> I needed to get it out there! I decided to use <a href="https://pages.github.com/" rel="noreferrer" target="_blank">GitHub Pages</a> as a hosting provider of sorts. Future plans include migrating to a separate hosting provider but maintaining the structure and build of the site. Updating my site is as easy as pushing a new commit! DNS is handled via <a href="https://www.namecheap.com/" rel="noreferrer" target="_blank">Namecheap</a> and a single <code>ALIAS</code> record. Mail is handled via <a href="https://fastmail.com/" rel="noreferrer" target="_blank">Fastmail</a>. To make deploying things easier, I built a script to build &amp; deploy everything. Now to just get some more things out of draft&hellip;</p>
+<p>Now that I could easily browse my site via <code>localhost</code> I needed to get it out there! I decided to use <a href="https://pages.github.com/">GitHub Pages</a> as a hosting provider of sorts. Future plans include migrating to a separate hosting provider but maintaining the structure and build of the site. Updating my site is as easy as pushing a new commit! DNS is handled via <a href="https://www.namecheap.com/">Namecheap</a> and a single <code>ALIAS</code> record. Mail is handled via <a href="https://fastmail.com/">Fastmail</a>. To make deploying things easier, I built a script to build &amp; deploy everything. Now to just get some more things out of draft&hellip;</p>
 
   <ul>
     
@@ -126,10 +112,10 @@
       <footer class="footer">
   <section class="container">
     
-     © 2019
+     © 2020
     
-       · 
-      Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+       • 
+      Powered by <a href="https://gohugo.io/">Hugo</a>
     
     
   </section>

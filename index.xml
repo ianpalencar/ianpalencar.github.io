@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ian Palencar</title>
+    <title>cranialpane.net</title>
     <link>https://cranialpane.net/</link>
-    <description>Recent content on Ian Palencar</description>
+    <description>Recent content on cranialpane.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
+    <lastBuildDate>Mon, 25 Nov 2019 14:48:20 -0500</lastBuildDate>
     
 	<atom:link href="https://cranialpane.net/index.xml" rel="self" type="application/rss+xml" />
     
