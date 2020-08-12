@@ -6,10 +6,19 @@
     <description>Recent content on cranialpane.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 25 Nov 2019 14:48:20 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 11 Aug 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://cranialpane.net/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Desert Station: The Portable LAN Party Crate</title>
+      <link>https://cranialpane.net/projects/desert-station/</link>
+      <pubDate>Tue, 11 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranialpane.net/projects/desert-station/</guid>
+      <description>Basic information on a portable LAN party appliance.</description>
+    </item>
     
     <item>
       <title></title>
