@@ -85,6 +85,21 @@
         
   <section class="container list">
   <h1 class="title">Website: Care and Feeding</h1>
+  
+  <h2 id="intro">Intro</h2>
+<p>Hello! This is a short article about how this site was built and deployed. I learned a lot on the way, and while I wouldn&rsquo;t consider myself an expert by any means hopefully this helps push someone over the edge into hosting.</p>
+<h2 id="design-and-build">Design and Build</h2>
+<p>First, I didn&rsquo;t want to write raw HTML/CSS/JS. I don&rsquo;t do that stuff by trade and learning the finer points of it seemed like too much trouble. Enter <a href="https://gohugo.io/">Hugo</a>, a static site generator. This scratched multiple needs for me:</p>
+<ol>
+<li>Avoid a dynamically generated site</li>
+<li>Reduce dependencies on outside environments</li>
+<li>Have a truly portable site which is light on resources</li>
+</ol>
+<p>Hugo is immensely flexible when it comes to templates. The possibilities are near endless, and while I&rsquo;m currently using <a href="https://themes.gohugo.io/hugo-coder/">Hugo Coder</a> with some alterations. I&rsquo;m planning on reducing the footprint even more, including removing any external website dependencies (fonts/javascript/etc). There&rsquo;s a lot to be said for a simple website which <em>just works</em>.</p>
+<h2 id="deploy-hosting-and-dns">Deploy, Hosting, and DNS</h2>
+<p>Now that I could easily browse my site via <code>localhost</code> I needed to get it out there! I decided to use <a href="https://pages.github.com/">GitHub Pages</a> as a hosting provider of sorts. Future plans include migrating to a separate hosting provider but maintaining the structure and build of the site. Updating my site is as easy as pushing a new commit! DNS is handled via <a href="https://www.namecheap.com/">Namecheap</a> and a single <code>ALIAS</code> record. Mail is handled via <a href="https://fastmail.com/">Fastmail</a>. To make deploying things easier, I built a script to build &amp; deploy everything. Now to just get some more things out of draft&hellip;</p>
+
+  
   <ul>
     
     
@@ -99,7 +114,7 @@
       <footer class="footer">
   <section class="container">
     
-     © 2020
+     © 2021
     
        • 
       Powered by <a href="https://gohugo.io/">Hugo</a>
