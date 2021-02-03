@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Ian Palencar">
+    <meta name="description" content="A collection of projects, musings, and more.">
+    <meta name="keywords" content="profile,personal,developer,software engineer,java">
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Origins"/>
+<meta name="twitter:description" content="Basic information on setting up and running home server infrastructure"/>
+
+    <meta property="og:title" content="Origins" />
+<meta property="og:description" content="Basic information on setting up and running home server infrastructure" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://cranialpane.net/projects/servers/intro/" />
+<meta property="article:published_time" content="2021-02-02T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-02-02T00:00:00+00:00" />
+
+
+    
+      <base href="https://cranialpane.net/projects/servers/intro/">
+    
+    <title>
+  Origins · cranialpane.net
+</title>
+
+    
+      <link rel="canonical" href="https://cranialpane.net/projects/servers/intro/">
+    
+
+    
+      
+      
+      <link rel="stylesheet" href="/css/coder.min.265322a0a1444686253486e211a4aacd2e278b631f979bd0b149ae2dfb7e8588.css" integrity="sha256-JlMioKFERoYlNIbiEaSqzS4ni2Mfl5vQsUmuLft&#43;hYg=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+
+    
+
+    
+    
+    <link rel="icon" type="image/png" href="https://cranialpane.net/img/disk-doctor-32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://cranialpane.net/img/disk-doctor-16.png" sizes="16x16">
+
+    <meta name="generator" content="Hugo 0.74.2" />
+  </head>
+
+  <body class=" ">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">
+      cranialpane.net
+    </a>
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
+    <ul class="navigation-list">
+      
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://cranialpane.net/">Home</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://cranialpane.net/projects/">Projects</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://cranialpane.net/about/">About</a>
+          </li>
+        
+      
+      
+    </ul>
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container page">
+  <article>
+    <header>
+      <h1>Origins</h1>
+      
+      <i>Building out infrastructure one mistake at a time.</i>
+      
+    </header>
+    <h2 id="first-steps">First Steps</h2>
+<p>My first acquisition was a machine which was on the way to the dumpster at work - a <a href="https://www.dell.com/us/dfb/p/poweredge-2950/pd">Dell PowerEdge 2950 III</a>. The machine was pretty well-equipped, and after sitting on it for a couple years I bought a rack to mount it and a cheap network switch to plug all those juicy gigabit ports into.</p>
+<p>Deciding to firewall things at the system level, I went with the <a href="https://www.vmware.com/products/vsphere-hypervisor.html">ESXi</a> hypervisor and got to work provisioning virtual machines.</p>
+<h2 id="expansion">Expansion</h2>
+<p>The PowerEdge 2950 is a loud machine. Like, being able to hear through the floor loud. So I went in search of different machines and ended up acquiring a <a href="https://www.dell.com/downloads/global/products/pedge/en/server-poweredge-r610-specs-en.pdf">PowerEdge R610 (pdf)</a> for a relatively good price. The machine is a 1U rack machine and while it would jet engine on boot it would quiet down quickly enough.</p>
+<p>I used this machine as my first foray into serious virtualization, and ran a Factorio server, voice chat (Mumble/Murmur), and the siren song of anybody getting into the homelab hobby - Plex.</p>
+<p>Stopping was no longer an option, so I started cruising Craigslist and set up IFTTT alerts (this service was discontinued after instability, so I&rsquo;ve resorted to manually peeking about) to alert me to anything being listed in the area. My best score so far has been an R710 for $50 including rails.</p>
+<p>This was a special R710, however - it was designed for pure virtualization and had no local drives. I found that I could convert it from four blank drive spots to six drives with a new backplane and bought a used H700 RAID card and several old enterprise drives to fill it out.</p>
+<p>I used this machine (and still do use occasionally) for a ton of services, including the following:</p>
+<ul>
+<li>Plex</li>
+<li>Unifi Controller</li>
+<li>Bacula</li>
+<li>Factorio</li>
+<li>Grafana</li>
+<li>Mumble</li>
+</ul>
+<p>I also purchased an R210ii to use as a firewall and router, as I had long outgrown both the combo router/wifi box I started with. I chose <a href="https://www.pfsense.org/">pfsense</a> as my router software and have used it in the following capacities:</p>
+<ul>
+<li>Certificate Management</li>
+<li>DNS resolution for the network</li>
+<li>Multiple VLANs
+<ul>
+<li>General</li>
+<li>Administrative (remote management)</li>
+<li>IoT (firewalled from the rest of my LAN)</li>
+</ul>
+</li>
+<li>RADUIS for WiFi authentication</li>
+<li>Dynamic DNS</li>
+<li>Adblocking</li>
+</ul>
+<h2 id="networking">Networking</h2>
+<p>I also needed to replace the ailing 24 port Dell switch I purchased for $18. Several of the ports had failed or were in the process of failing, in addition to not having any headroom for 10Gbit uplinks. This was to be expected for cheap hardware, so I invested in one of the few new pieces of gear I own - a MikroTik <a href="https://mikrotik.com/product/CSS326-24G-2SplusRM">CSS326-24G-2S+RM</a>. It has 24 gigabit ports and (quite importantly) two SFP+ 10Gbit ports. I was running into bottlenecking issues occasionally with multiple clients trying to access shared resources so being able to service a few different computers at gigabit line speeds was a priority for me.</p>
+<p>Unfortunately the MikroTik switch gave up the ghost and started experiencing increasing packet loss after being powered on for a few minutes. This occurred after a period where my power was cutting out due to snowstorms, however the battery backup system I own helped smooth some of those. Perhaps just coincidence? I&rsquo;ve since migrated to something&hellip; larger. And with more lights, obviously.</p>
+<h2 id="whats-next">What&rsquo;s Next?</h2>
+<p>One of my goals is to become less reliant on cloud services in as many forms as possible. With the recent shutdown of <a href="https://en.wikipedia.org/wiki/Google_Play_Music">Google Play Music</a> and the absolutely inferior replacement for streaming music I own it has become evident that the only whims I want to be subjected to are my own.</p>
+
+  </article>
+</section>
+
+
+      </div>
+
+      <footer class="footer">
+  <section class="container">
+    
+     © 2021
+    
+       • 
+      Powered by <a href="https://gohugo.io/">Hugo</a>
+    
+    
+  </section>
+</footer>
+
+    </main>
+
+    
+
+  </body>
+
+</html>

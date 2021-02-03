@@ -6,9 +6,55 @@
     <description>Recent content in Tags on cranialpane.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
+    <lastBuildDate>Tue, 02 Feb 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://cranialpane.net/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>dell</title>
+      <link>https://cranialpane.net/tags/dell/</link>
+      <pubDate>Tue, 02 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranialpane.net/tags/dell/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>server</title>
+      <link>https://cranialpane.net/tags/server/</link>
+      <pubDate>Tue, 02 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranialpane.net/tags/server/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>servers</title>
+      <link>https://cranialpane.net/tags/servers/</link>
+      <pubDate>Tue, 02 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranialpane.net/tags/servers/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>virtualization</title>
+      <link>https://cranialpane.net/tags/virtualization/</link>
+      <pubDate>Tue, 02 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranialpane.net/tags/virtualization/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>homelab</title>
+      <link>https://cranialpane.net/tags/homelab/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranialpane.net/tags/homelab/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

@@ -6,10 +6,19 @@
     <description>Recent content on cranialpane.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 11 Aug 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 02 Feb 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://cranialpane.net/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Origins</title>
+      <link>https://cranialpane.net/projects/servers/intro/</link>
+      <pubDate>Tue, 02 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranialpane.net/projects/servers/intro/</guid>
+      <description>Basic information on setting up and running home server infrastructure</description>
+    </item>
     
     <item>
       <title>Desert Station: The Portable LAN Party Crate</title>
@@ -18,6 +27,15 @@
       
       <guid>https://cranialpane.net/projects/desert-station/</guid>
       <description>Basic information on a portable LAN party appliance.</description>
+    </item>
+    
+    <item>
+      <title>Website: Care and Feeding</title>
+      <link>https://cranialpane.net/projects/website/</link>
+      <pubDate>Mon, 25 Nov 2019 14:48:20 -0500</pubDate>
+      
+      <guid>https://cranialpane.net/projects/website/</guid>
+      <description>Rundown of the build and deploy of cranialpane.net.</description>
     </item>
     
     <item>
