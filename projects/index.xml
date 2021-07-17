@@ -6,7 +6,16 @@
     <description>Recent content in Project Collection on cranialpane.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 02 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://cranialpane.net/projects/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 16 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://cranialpane.net/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MOTU 24I/O Repair</title>
+      <link>https://cranialpane.net/projects/repairs/motu-24io/part1/</link>
+      <pubDate>Fri, 16 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranialpane.net/projects/repairs/motu-24io/part1/</guid>
+      <description>Diagnosis and repair of an audio recording module.</description>
+    </item>
+    
     <item>
       <title>Desert Station: The Portable LAN Party Crate</title>
       <link>https://cranialpane.net/projects/desert-station/</link>

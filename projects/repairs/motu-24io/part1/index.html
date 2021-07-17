@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Ian Palencar">
+    <meta name="description" content="A collection of projects, musings, and more.">
+    <meta name="keywords" content="profile,personal,developer,software engineer,java">
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="MOTU 24I/O Repair"/>
+<meta name="twitter:description" content="Diagnosis and repair of an audio recording module."/>
+
+    <meta property="og:title" content="MOTU 24I/O Repair" />
+<meta property="og:description" content="Diagnosis and repair of an audio recording module." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://cranialpane.net/projects/repairs/motu-24io/part1/" /><meta property="article:section" content="projects" />
+<meta property="article:published_time" content="2021-07-16T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-07-16T00:00:00+00:00" />
+
+
+
+    
+      <base href="https://cranialpane.net/projects/repairs/motu-24io/part1/">
+    
+    <title>
+  MOTU 24I/O Repair · cranialpane.net
+</title>
+
+    
+      <link rel="canonical" href="https://cranialpane.net/projects/repairs/motu-24io/part1/">
+    
+
+    
+      
+      
+      <link rel="stylesheet" href="/css/coder.min.1d081ecaa5e7264384674b9531a222e8979e81b5420dd3f238ebe05fe67a2755.css" integrity="sha256-HQgeyqXnJkOEZ0uVMaIi6JeegbVCDdPyOOvgX&#43;Z6J1U=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+
+    
+
+    
+    
+    <link rel="icon" type="image/png" href="https://cranialpane.net/img/disk-doctor-32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://cranialpane.net/img/disk-doctor-16.png" sizes="16x16">
+
+    <meta name="generator" content="Hugo 0.85.0" />
+  </head>
+
+  <body class=" ">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">
+      cranialpane.net
+    </a>
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
+    <ul class="navigation-list">
+      
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://cranialpane.net/">Home</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://cranialpane.net/projects/">Projects</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://cranialpane.net/about/">About</a>
+          </li>
+        
+      
+      
+    </ul>
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container page">
+  <article>
+    <header>
+      <h1>MOTU 24I/O Repair</h1>
+      
+    </header>
+    <h2 id="intro">Intro</h2>
+<p>I had been watching for <a href="https://en.wikipedia.org/wiki/Mark_of_the_Unicorn">MOTU</a> gear on eBay for a while. I have some familiarity with their recording systems and like them from a vintage gear standpoint. Their audio solutions use purpose-built PCI cards and &ldquo;Audiowire&rdquo; which uses the same cable as FireWire but a different protocol. Notably, attempting to plug an Audiowire device into a FireWire port could have dire consequences for the Audiowire device.</p>
+<h2 id="ebay">eBay</h2>
+<p>After a while searching I found a <em>non-working</em> MOTU 24I/O and spent a grand total of $15 (not including shipping) on it. This was at a time where working modules were going for $300 or more. The gear was advertised as booting and entering a searching loop, which was something I was looking for. I was hoping there was a connection issue and not a CPU issue.</p>
+<h2 id="initial-dissection">Initial Dissection</h2>
+<p>Upon receiving the unit (and ordering a matching PCIe-424 card) I verified that the module did not connect to the computer, and was not visible despite being in a connecting loop. Time to tear it down.</p>
+<p>The construction of these devices is wonderful. The cases are cast aluminum with the front and back panels sitting in channels. These are excellent rackmount case fodder if the internals are well and truly shot (a 1U mini-ITX build would probably fit&hellip; barely).</p>
+<p>After pulling apart the riser board and getting at the main board, I started probing. Checking first at the AudioWire area, I noted that the interface chip was very much overheating. Narrowly avoiding a blister, I decided to purchase an oscilloscope to troubleshoot further.</p>
+<h2 id="digging-deeper">Digging Deeper</h2>
+<p>After setting up the scope, I started probing around with the device on. I verified there was activity between each of the DACs and the main CPU, that the CPU was clocking properly, however I wasn&rsquo;t seeing any data flowing to or from the serial chip. I let the device cool and attempted again. I noted that there was signal coming to/from the CPU and the serial chip! I believe the chip has failed in a short circuit mode, with the differential lines being driven high on the chip.</p>
+<h2 id="repair">Repair</h2>
+<p>I ordered the appropriate chip off of <a href="https://www.digikey.com/">DigiKey</a> (with a couple extras) and got to work. Instead of opting for my hot air rework station I opted to try <a href="http://www.chipquik.com/">Chip Quik</a> to de-solder the SOIC package from the board. It did make the process quite simple, and within a few minutes I had the new chip in. A quick boot up of the module when connected to the appropriate interface card yielded success!</p>
+<h2 id="summary">Summary</h2>
+<p>Repairing devices and equipment is a skill that has to be cultivated. I bought the module not knowing if it would be possible to fix, nor what the specific problem was. Based on process of elimination and having the right tools on hand I was able to narrow down the cause, identify the solution, and implement it with a minimal amount of time invested.</p>
+<p>The gear might be a bit old, but it will do everything I need it to!</p>
+
+  </article>
+</section>
+
+
+      </div>
+
+      <footer class="footer">
+  <section class="container">
+    
+     © 2021
+    
+       • 
+      Powered by <a href="https://gohugo.io/">Hugo</a>
+    
+    
+  </section>
+</footer>
+
+    </main>
+
+    
+
+  </body>
+
+</html>
