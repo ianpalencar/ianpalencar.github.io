@@ -5,11 +5,7 @@
     <link>https://cranialpane.net/tags/homelab/</link>
     <description>Recent content in homelab on cranialpane.net</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    
-	<atom:link href="https://cranialpane.net/tags/homelab/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en</language><atom:link href="https://cranialpane.net/tags/homelab/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Home Servers and Services</title>
       <link>https://cranialpane.net/projects/servers/</link>

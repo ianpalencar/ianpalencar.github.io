@@ -6,11 +6,7 @@
     <description>Recent content in server on cranialpane.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 02 Feb 2021 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://cranialpane.net/tags/server/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 02 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://cranialpane.net/tags/server/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Home Servers and Services</title>
       <link>https://cranialpane.net/projects/servers/</link>
