@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>dell on cranialpane.net</title>
-    <link>https://cranialpane.net/tags/dell/</link>
+    <link>https://www.cranialpane.net/tags/dell/</link>
     <description>Recent content in dell on cranialpane.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 02 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://cranialpane.net/tags/dell/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 02 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.cranialpane.net/tags/dell/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Origins</title>
-      <link>https://cranialpane.net/projects/servers/intro/</link>
+      <link>https://www.cranialpane.net/projects/servers/intro/</link>
       <pubDate>Tue, 02 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://cranialpane.net/projects/servers/intro/</guid>
+      <guid>https://www.cranialpane.net/projects/servers/intro/</guid>
       <description>Basic information on setting up and running home server infrastructure</description>
     </item>
     

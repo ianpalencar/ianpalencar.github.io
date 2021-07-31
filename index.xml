@@ -2,53 +2,53 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>cranialpane.net</title>
-    <link>https://cranialpane.net/</link>
+    <link>https://www.cranialpane.net/</link>
     <description>Recent content on cranialpane.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 16 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://cranialpane.net/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 16 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.cranialpane.net/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>MOTU 24I/O Repair</title>
-      <link>https://cranialpane.net/projects/repairs/motu-24io/part1/</link>
+      <link>https://www.cranialpane.net/projects/repairs/motu-24io/part1/</link>
       <pubDate>Fri, 16 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://cranialpane.net/projects/repairs/motu-24io/part1/</guid>
+      <guid>https://www.cranialpane.net/projects/repairs/motu-24io/part1/</guid>
       <description>Diagnosis and repair of an audio recording module.</description>
     </item>
     
     <item>
       <title>Origins</title>
-      <link>https://cranialpane.net/projects/servers/intro/</link>
+      <link>https://www.cranialpane.net/projects/servers/intro/</link>
       <pubDate>Tue, 02 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://cranialpane.net/projects/servers/intro/</guid>
+      <guid>https://www.cranialpane.net/projects/servers/intro/</guid>
       <description>Basic information on setting up and running home server infrastructure</description>
     </item>
     
     <item>
       <title>Desert Station: The Portable LAN Party Crate</title>
-      <link>https://cranialpane.net/projects/desert-station/</link>
+      <link>https://www.cranialpane.net/projects/desert-station/</link>
       <pubDate>Tue, 11 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://cranialpane.net/projects/desert-station/</guid>
+      <guid>https://www.cranialpane.net/projects/desert-station/</guid>
       <description>Basic information on a portable LAN party appliance.</description>
     </item>
     
     <item>
       <title>Website: Care and Feeding</title>
-      <link>https://cranialpane.net/projects/website/</link>
+      <link>https://www.cranialpane.net/projects/website/</link>
       <pubDate>Mon, 25 Nov 2019 14:48:20 -0500</pubDate>
       
-      <guid>https://cranialpane.net/projects/website/</guid>
+      <guid>https://www.cranialpane.net/projects/website/</guid>
       <description>Rundown of the build and deploy of cranialpane.net.</description>
     </item>
     
     <item>
       <title>About</title>
-      <link>https://cranialpane.net/about/</link>
+      <link>https://www.cranialpane.net/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranialpane.net/about/</guid>
+      <guid>https://www.cranialpane.net/about/</guid>
       <description>Hello Hello, I&amp;rsquo;m Ian! My day job involves me creating great medical imaging solutions in Java and my evenings are spent across a multitude of activities and personal projects.
 Current Interests I like spending my free time working on personal software projects, learning new technologies, playing video games, building robots, finding new restaurants, and several other categories of awesome. Current passions include learning enough about the National Electric Code to do some minor rewiring bits and pieces on my house, wrestling with yard work, and trying to brew the perfect cup of coffee.</description>
     </item>
