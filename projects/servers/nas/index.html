@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Ian Palencar">
+    <meta name="description" content="A collection of projects, musings, and more.">
+    <meta name="keywords" content="profile,personal,developer,software engineer,java">
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Home NAS"/>
+<meta name="twitter:description" content="Setting up a TrueNAS-based multi disk NAS in 11th generation Dell hardware."/>
+
+    <meta property="og:title" content="Home NAS" />
+<meta property="og:description" content="Setting up a TrueNAS-based multi disk NAS in 11th generation Dell hardware." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.cranialpane.net/projects/servers/nas/" /><meta property="article:section" content="projects" />
+<meta property="article:published_time" content="2019-11-02T13:37:42-04:00" />
+<meta property="article:modified_time" content="2019-11-02T13:37:42-04:00" />
+
+
+
+    
+      <base href="https://www.cranialpane.net/projects/servers/nas/">
+    
+    <title>
+  Home NAS · cranialpane.net
+</title>
+
+    
+      <link rel="canonical" href="https://www.cranialpane.net/projects/servers/nas/">
+    
+
+    
+      
+      
+      <link rel="stylesheet" href="/css/coder.min.b37d81ac3411d4e54d70ab88800146b54198523cc677c122f5483e0367c893e4.css" integrity="sha256-s32BrDQR1OVNcKuIgAFGtUGYUjzGd8Ei9Ug&#43;A2fIk&#43;Q=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+
+    
+
+    
+    
+    <link rel="icon" type="image/png" href="https://www.cranialpane.net/img/disk-doctor-32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://www.cranialpane.net/img/disk-doctor-16.png" sizes="16x16">
+
+    <meta name="generator" content="Hugo 0.98.0" />
+  </head>
+
+  <body class=" ">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">
+      cranialpane.net
+    </a>
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-button float-right" for="menu-toggle"><img src="/images/bars.svg" aria-hidden="true" width=15rem></img></label>
+    <ul class="navigation-list">
+      
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://www.cranialpane.net/">Home</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://www.cranialpane.net/projects/">Projects</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://www.cranialpane.net/about/">About</a>
+          </li>
+        
+      
+      
+    </ul>
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container page">
+  <article>
+    <header>
+      <h1>Home NAS</h1>
+      
+      <i>The ebb and flow between networking and sneakernet continues.</i>
+      
+    </header>
+    <p>I wanted some flexibility on storing and accessing my data. Moving USB drives from machine to machine seems so archaic with the advent of high speed networking.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
+<h2 id="r510">R510</h2>
+<p>One system that could take advantage of a 10 gigabit card was my planned file server. Starting off, I purchased a 12 drive bay R510 and ensured it contained an H200 and packed it with RAM. I bought four 8TB WD external drives and shucked them after ensuring they passed a drive test overnight. I also installed a 10 gigabit <a href="https://www.mellanox.com/related-docs/prod_adapter_cards/ConnectX-2_EN_Cards.pdf">Mellanox ConnectX® 2</a> card and used a DAC to connect to the switch. After adding a copy of TrueNAS this has become my home workhorse, and now manages serving file shares, hosting backups, and my Plex server calls it home.</p>
+<h2 id="hardware">Hardware</h2>
+<p>I chose a 12-bay R510 with dual L5640 CPUs and 64GB of RAM to run <a href="https://www.truenas.com/">TrueNAS</a>. The hardware is certainly older now but it does well to serve files. My next machine (and pending migration to TrueNAS SCALE) is lying in wait, but that&rsquo;s for another post.</p>
+<p>I also have a Mellanox Connectx-2 card installed, for a single 10Gb port. This is directly hooked into one of the ports on my switch, facilitating multiple simultaneous 1Gb links.</p>
+<p>My current drive setup involves just four 8TB WD white label drives. I thoroughly tested these before shucking them, and while I&rsquo;d prefer to have the longer warranty afforded by purchasing proper drives I didn&rsquo;t want to spend the premium for them.</p>
+<p>Boot drives consist of two mirrored SSDs. I started with flash drives but I ran into reliability issues, where one or the other would regularly drop out. The configuration and setup is stored directly on the pool drives, so there&rsquo;s no need for fast hardware here.</p>
+<h2 id="software">Software</h2>
+<p>It&rsquo;s a bog-standard TrueNAS installation. What more could one want? A single pool is set up between my disks and sliced as-needed for things like media and backups. VLAN trunking isn&rsquo;t fun to set up (I gave up and just used a separate NIC for certain traffic) but I&rsquo;m going to be giving that another whirl with SCALE.</p>
+<h2 id="jails">Jails</h2>
+<p>Just as the rest of the world moves to container orchestration, I&rsquo;ve decided to pick up jails and adopt a lot of pets as a result. They&rsquo;re fragile and even the official (at least as-listed in the UI) plugins/jails tend to break on upgrade. Looking forward to SCALE and just running containers instead.</p>
+<h3 id="plex">Plex</h3>
+<p>Gotta have Plex. I migrated from Google Music (where I was one of those weird people that only listened to music I uploaded or purchased via the service) so Plex was a nice spot to land with the shutdown of Google Music. I might migrate to a different solution someday but for now it&rsquo;s been a great way to consolidate my library first and play it on all my devices second.</p>
+<h3 id="nextcloud">Nextcloud</h3>
+<p>I&rsquo;m also slowly ejecting from most public clouds for fun, and I needed a good replacement for collaborative file sharing and document editing. Nextcloud seems to hit all of that well enough!</p>
+<h3 id="gitea">Gitea</h3>
+<p>Forge wars aside, I ended up standing up Gitea as a way to store my own code. I&rsquo;ll hook CI up someday, but probably only after the SCALE migration.</p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>I got tired of having this sit in draft since 2019 so I just wanted to get it out the door. Apologies in advance, most of this is probably out of date.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+
+  </article>
+</section>
+
+
+      </div>
+
+      <footer class="footer">
+  <section class="container">
+    
+     © 2023
+    
+       • 
+      Powered by <a href="https://gohugo.io/">Hugo</a>
+    
+    
+  </section>
+</footer>
+
+    </main>
+
+    
+
+  </body>
+
+</html>

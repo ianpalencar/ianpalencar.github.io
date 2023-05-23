@@ -16,5 +16,14 @@
       <description>Basic information on setting up and running home server infrastructure</description>
     </item>
     
+    <item>
+      <title>Home NAS</title>
+      <link>https://www.cranialpane.net/projects/servers/nas/</link>
+      <pubDate>Sat, 02 Nov 2019 13:37:42 -0400</pubDate>
+      
+      <guid>https://www.cranialpane.net/projects/servers/nas/</guid>
+      <description>Setting up a TrueNAS-based multi disk NAS in 11th generation Dell hardware.</description>
+    </item>
+    
   </channel>
 </rss>

@@ -26,15 +26,6 @@
     </item>
     
     <item>
-      <title>Desert Station: The Portable LAN Party Crate</title>
-      <link>https://www.cranialpane.net/projects/desert-station/</link>
-      <pubDate>Tue, 11 Aug 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.cranialpane.net/projects/desert-station/</guid>
-      <description>Basic information on a portable LAN party appliance.</description>
-    </item>
-    
-    <item>
       <title>Website: Care and Feeding</title>
       <link>https://www.cranialpane.net/projects/website/</link>
       <pubDate>Mon, 25 Nov 2019 14:48:20 -0500</pubDate>
@@ -44,13 +35,22 @@
     </item>
     
     <item>
+      <title>Home NAS</title>
+      <link>https://www.cranialpane.net/projects/servers/nas/</link>
+      <pubDate>Sat, 02 Nov 2019 13:37:42 -0400</pubDate>
+      
+      <guid>https://www.cranialpane.net/projects/servers/nas/</guid>
+      <description>Setting up a TrueNAS-based multi disk NAS in 11th generation Dell hardware.</description>
+    </item>
+    
+    <item>
       <title>About</title>
       <link>https://www.cranialpane.net/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://www.cranialpane.net/about/</guid>
-      <description>Hello Hello, I&amp;rsquo;m Ian! My day job involves me creating great medical imaging solutions in Java and my evenings are spent across a multitude of activities and personal projects.
-Current Interests I like spending my free time working on personal software projects, learning new technologies, playing video games, building robots, finding new restaurants, and several other categories of awesome. Current passions include learning enough about the National Electric Code to do some minor rewiring bits and pieces on my house, wrestling with yard work, and trying to brew the perfect cup of coffee.</description>
+      <description>Hello Hello, I&amp;rsquo;m Ian! My day job involves working with a great team to advance medical imaging and my evenings are spent across a multitude of activities and personal projects.
+Current Interests I like spending my free time working on personal software projects, learning new technologies, playing video games, building robots, finding new restaurants, and several other categories of awesome. Current passions include learning enough about the National Electric Code to do some minor rewiring bits and pieces on my house, wrestling with yard work, staring at YAML until it makes sense, and trying to brew the perfect cup of coffee.</description>
     </item>
     
   </channel>
